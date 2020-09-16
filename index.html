@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <title>Octoberfest 2021</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="menu-block">
+                <ul class="menu-left">
+                    <li class="menu-left__item"><a href="#">Pavilions</a></li>
+                    <li class="menu-left__item"><a href="#">History</a></li>
+                </ul>
+                <img src="./src/img/logo/logo.svg" alt="logo" class="logo">
+                <ul class="menu-right">
+                    <li class="menu-right__item"><a href="#">Songs</a></li>
+                    <li class="menu-right__item"><a href="#">Costumes</a></li>
+                </ul>
+            </div>
+            <div class="promo">
+                <p class="overhead">September 19th - October 4th</p>
+                <h1 class="header-title">Octoberfest 2021</h1>
+                <p class="subtitle">A unique beer festival, accompanied by fun traditional activities <br>
+                    and costume parades</p>
+                <div class="button find-button"><a href="#">Find the Hotel</a></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container about video">
+            <img src="./src/img/top-covenant.svg" alt="top-covenant" class="top-covenant">
+            <h2 class="title">A festival with two hundred years <br> of tradition</h2>
+            <div class="video-container">
+                <img src="./src/img/video-container/video-frame.svg" alt="video-frame" class="video-frame">
+                <img src="./src/img/video-container/about-preview.png" alt="about-preview" class="video-preview">
+                <img src="./src/img/video-container/play-btn.svg" alt="play" class="play-btn" onclick="openModal('https://www.youtube.com/embed/46U5KNOEah0')">
+            </div>
+            <p class="description">The festival has long won worldwide recognition and is awarded a variety <br>
+                of epithets. In the eyes of some, this is one of the most popular festivities <br>
+                in the world, for others it is a German national tradition, still others even call <br>
+                this festival the most ambitious beer spree of the year. Millions of beer <br>
+                connoisseurs from all over the world gather in Munich to pay tribute <br>
+                to this noble drink. <a href="#">Read more></a></p>
+        </div>
+
+        <div class="container">
+            <div class="separator">
+                <img src="./src/img/separator/beer-separator-01.png" alt="beer">
+            </div>
+        </div>
+
+        <div class="container events">
+            <img src="./src/img/top-covenant.svg" alt="top-covenant" class="top-covenant">
+            <h2 class="title">Main events</h2>
+            <div class="gallery">
+                <div class="gallery__item">
+                    <img src="./src/img/events-gallery/event-1.png" alt="Parade" class="gallery__item_image">
+                    <p class="gallery__item_title">Parade</p>
+                </div>
+                <div class="gallery__item">
+                    <img src="./src/img/events-gallery/event-2.png" alt="Opening ceremony" class="gallery__item_image">
+                    <p class="gallery__item_title">Opening ceremony</p>
+                </div>
+                <div class="gallery__item">
+                    <img src="./src/img/events-gallery/event-3.png" alt="Procession" class="gallery__item_image">
+                    <p class="gallery__item_title">Procession</p>
+                </div>
+                <div class="gallery__item">
+                    <img src="./src/img/events-gallery/event-1.png" alt="Parade" class="gallery__item_image">
+                    <p class="gallery__item_title">Parade</p>
+                </div>
+                <div class="gallery__item">
+                    <img src="./src/img/events-gallery/event-2.png" alt="Opening ceremony" class="gallery__item_image">
+                    <p class="gallery__item_title">Opening ceremony</p>
+                </div>
+                <div class="gallery__item">
+                    <img src="./src/img/events-gallery/event-3.png" alt="Procession" class="gallery__item_image">
+                    <p class="gallery__item_title">Procession</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="separator">
+                <img src="./src/img/separator/bread-separator-01.png">
+            </div>
+        </div>
+
+        <div class="container luna-park">
+            <img src="./src/img/top-covenant.svg" alt="top-covenant" class="top-covenant">
+            <h2 class="title">Luna Park</h2>
+            <div class="video-container">
+                <img src="./src/img/video-container/video-frame.svg" alt="video-frame" class="video-frame">
+                <img src="./src/img/video-container/luna-park-preview.png" alt="about-preview" class="video-preview">
+                <img src="./src/img/video-container/play-btn.svg" alt="play" class="play-btn" onclick="openModal('https://www.youtube.com/embed/oBRs8u4fpzA')">
+            </div>
+            <p class="description">How about trying all the carousels and rides until you feel dizzy? <br>
+                You’ll find all kinds of them here! Every Tuesday until 18:00, the so-called <br> 
+                Family Day is held with reduced prices for rides, food and drinks.</p>
+            <div class="button attractions"><a href="#">Attractions</a></div>
+        </div>
+
+        <div class="container">
+            <div class="separator">
+                <img src="./src/img/separator/hat-separator-01.png" alt="">
+            </div>
+        </div>
+        
+        <div class="container food-and-drinks">
+            <img src="./src/img/top-covenant.svg" alt="top-covenant" class="top-covenant">
+            <h2 class="title">Food and drinks</h2>
+            <div class="gallery">
+                <div class="gallery__item">
+                    <img src="./src/img/food-and-drinks-gallery/food-and-drinks-1.png" alt="Wurstel" class="gallery__item_image">
+                    <p class="gallery__item_title">Wurstel</p>
+                </div>
+                <div class="gallery__item">
+                    <img src="./src/img/food-and-drinks-gallery/food-and-drinks-2.png" alt="Knodel" class="gallery__item_image">
+                    <p class="gallery__item_title">Knodel</p>
+                </div>
+                <div class="gallery__item">
+                    <img src="./src/img/food-and-drinks-gallery/food-and-drinks-3.png" alt="Schweinshaxe" class="gallery__item_image">
+                    <p class="gallery__item_title">Schweinshaxe</p>
+                </div>
+                <div class="gallery__item">
+                    <img src="./src/img/food-and-drinks-gallery/food-and-drinks-1.png" alt="Wurstel" class="gallery__item_image">
+                    <p class="gallery__item_title">Wurstel</p>
+                </div>
+                <div class="gallery__item">
+                    <img src="./src/img/food-and-drinks-gallery/food-and-drinks-2.png" alt="Knodel" class="gallery__item_image">
+                    <p class="gallery__item_title">Knodel</p>
+                </div>
+                <div class="gallery__item">
+                    <img src="./src/img/food-and-drinks-gallery/food-and-drinks-3.png" alt="Schweinshaxe" class="gallery__item_image">
+                    <p class="gallery__item_title">Schweinshaxe</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <ul class="footer__column contacts">
+                <li><img src="./src/img/logo/footer-logo.svg" alt="footer-logo" class="footer__logo"></li>
+                <li class="td">Theresienwiese</li>
+                <li class="td">München, Germany, 80339</li>
+                <li class="td">info@oktoberfest.net</li>
+            </ul>
+            <ul class="footer__column">
+                <li class="th">About the festival</li>
+                <li class="td">History</li>
+                <li class="td">Schedule</li>
+                <li class="td">Pavilions</li>
+            </ul>
+            <ul class="footer__column">
+                <li class="th">Octoberfest map</li>
+                <li class="td">Big pavilions</li>
+                <li class="td">Lesser pavilions</li>
+                <li class="td">Virtual tour</li>
+            </ul>
+            <ul class="footer__column">
+                <li class="th">Additional information</li>
+                <li class="td">Ways to here</li>
+                <li class="td">Advices</li>
+                <li class="td">FAQ</li>
+            </ul>
+            <ul class="footer__column">
+                <li class="th social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="td">
+                    <a href="https://thesaftech.com/">
+                        <img src="./src/img/logo/saftech-logo.svg" alt="saftech-logo" class="saftech-logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <div class="modal">
+        <div class="modal__body">
+            <div class="iframe">
+                <iframe  src="" 
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+            </div>
+            <button class="close-btn" onclick="closeModal()">close</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="./src/scripts/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./src/scripts/slick.min.js"></script>
+    <script type="text/javascript" src="./src/scripts/main.js"></script>
+</body>
+</html>
