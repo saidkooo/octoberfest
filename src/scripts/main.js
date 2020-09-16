@@ -3,14 +3,26 @@ const modal = document.querySelector(".modal")
 let opened = false;
 
 function openModal(param) {
-    let video = document.querySelector("iframe").src=param
-    document.querySelector("body").style.cssText="overflow: hidden"
-    modal.classList.add("open")
+    if (opened == false){
+        let video = document.querySelector("iframe").src=param
+        document.querySelector("body").style.cssText="overflow: hidden"
+        modal.classList.add("open")
+        opened = true
+    } else {
+        alert("Error, try again")
+        opened=false
+    }
 }
 
 function closeModal() {
-    modal.classList.remove("open")
-    document.querySelector("body").style.cssText="overflow: scroll"
+    if (opened == true){
+        modal.classList.remove("open")
+        document.querySelector("body").style.cssText="overflow-y: scroll"
+        opened=false
+    }
+    else {
+        opened=true
+    }
 }
 $(document).ready(function(){
     $('.gallery').slick({
