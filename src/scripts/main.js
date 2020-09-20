@@ -24,6 +24,20 @@ function closeModal() {
         opened=true
     }
 }
+function menuButton() {
+    if (!opened){
+        document.querySelector("body").style.cssText="overflow: hidden"
+        document.querySelector(".menu-button").classList.add("open");
+        document.querySelector(".mobile-menu").classList.add("open");
+        opened = true;
+    } else {
+        document.querySelector("body").style.cssText="overflow-y: scroll"
+        document.querySelector(".menu-button").classList.remove("open");
+        document.querySelector(".mobile-menu").classList.remove("open");
+        opened = false;
+    }
+}
+
 $(document).ready(function(){
     $('.gallery').slick({
         slidesToShow: 3,

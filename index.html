@@ -11,6 +11,21 @@
 </head>
 <body>
     <header>
+        <div class="mobile-menu-block">
+            <img src="./src/img/logo/logo.svg" alt="mobile-logo" class="mobile-logo">
+            <div class="menu-button" onclick="menuButton()">
+                <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+                    </path>
+                </svg>
+            </div>
+            <ul class="mobile-menu">
+                <li class="mobile-menu__item"><a href="#">Pavilions</a></li>
+                <li class="mobile-menu__item"><a href="#">History</a></li>
+                <li class="mobile-menu__item"><a href="#">Songs</a></li>
+                <li class="mobile-menu__item"><a href="#">Costumes</a></li>
+            </ul>
+        </div>
         <div class="header-content">
             <div class="menu-block">
                 <ul class="menu-left">
@@ -33,7 +48,7 @@
         </div>
     </header>
     <main>
-        <div class="container about video">
+        <div class="container about">
             <img src="./src/img/top-covenant.svg" alt="top-covenant" class="top-covenant">
             <h2 class="title">A festival with two hundred years <br> of tradition</h2>
             <div class="video-container">
@@ -49,10 +64,8 @@
                 to this noble drink. <a href="#">Read more></a></p>
         </div>
 
-        <div class="container">
-            <div class="separator">
-                <img src="./src/img/separator/beer-separator-01.png" alt="beer">
-            </div>
+        <div class="separator">
+            <img src="./src/img/separator/beer-separator-01.png" alt="beer">
         </div>
 
         <div class="container events">
@@ -86,10 +99,8 @@
             </div>
         </div>
 
-        <div class="container">
-            <div class="separator">
-                <img src="./src/img/separator/bread-separator-01.png">
-            </div>
+         <div class="separator">
+            <img src="./src/img/separator/bread-separator-01.png">
         </div>
 
         <div class="container luna-park">
@@ -106,10 +117,8 @@
             <div class="button attractions"><a href="#">Attractions</a></div>
         </div>
 
-        <div class="container">
-            <div class="separator">
-                <img src="./src/img/separator/hat-separator-01.png" alt="">
-            </div>
+        <div class="separator">
+            <img src="./src/img/separator/hat-separator-01.png" alt="">
         </div>
         
         <div class="container food-and-drinks">
@@ -145,6 +154,7 @@
     </main>
     <footer>
         <div class="footer-content">
+            
             <ul class="footer__column contacts">
                 <li><img src="./src/img/logo/footer-logo.svg" alt="footer-logo" class="footer__logo"></li>
                 <li class="td"><a href="#">Theresienwiese</a></li>
