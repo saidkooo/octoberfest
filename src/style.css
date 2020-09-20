@@ -1,7 +1,8 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html {
@@ -35,9 +36,15 @@ header {
     /*menu block*/
     
     .menu-block {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         max-width: 72.5%;
         margin: 0 auto;
     }
@@ -46,16 +53,24 @@ header {
         margin: 0 auto;
     }
     .menu-left {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: start;
     }
     .menu-left__item {
         margin-right: 55px;
         list-style: none;
     }
     .menu-right {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: end;
     }
     .menu-right__item {
         margin-left: 55px;
@@ -175,6 +190,8 @@ header {
     overflow: hidden;
 }
 .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .slick-slide {
@@ -226,9 +243,15 @@ footer {
     margin: 0 auto;
     padding: 55px 5%;
     max-width: 95.8%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     background: top no-repeat url(./img/backgrounds/footer-bg.svg);
 }
 .footer__column {
@@ -255,8 +278,12 @@ footer {
     max-width: 120px;
 }
 .social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .social-links a {
     text-decoration: none;
@@ -286,14 +313,25 @@ footer {
 }
 .modal.open {
     opacity: 1;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
     transition: 0.8s;
     visibility: visible;
 }
 .modal__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 10% 0;
 }
 .close-btn {
@@ -429,7 +467,8 @@ footer {
         max-width: 72%;
         padding: 10px 0;
         margin: 0 auto;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .footer__column {
         width: 50%;
@@ -468,31 +507,47 @@ footer {
         max-width: 25px;
         top: 5px;
         right: 25px;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
         transition: 0.5s;
     }
     .menu-button.open {
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
         transition: 0.5s;
-        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+                transform: rotate(-90deg);
         z-index: 20;
     }
 
     .mobile-menu {
         height: 0;
         visibility: hidden;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
         transition: .2s;
     }
     .mobile-menu.open {
         position: fixed;
         top: 0;
         left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         background: #F4EEE3;
         width: 100%;
         height: 100vh;
         z-index: 10;
         visibility: visible;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
         transition: .2s;
     }
 
@@ -606,10 +661,19 @@ footer {
     footer {
         padding: 0;
         max-width: 98.4%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         float: left;
         background: center no-repeat url(./img/backgrounds/footer-mobile-bg.svg);
         margin: 0 auto 25px;
@@ -617,7 +681,10 @@ footer {
     .footer-content {
         float: inherit;
         padding: 70px 0 90px;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         margin: 0;
     }
     .footer__column {
@@ -625,10 +692,14 @@ footer {
         width: 100%;
     }
     .footer__column:nth-child(1) {
-        order: -1;
+        -webkit-box-ordinal-group: 0;
+            -ms-flex-order: -1;
+                order: -1;
     }
     .footer__column:nth-child(5) {
-        order: -1;
+        -webkit-box-ordinal-group: 0;
+            -ms-flex-order: -1;
+                order: -1;
     }
     .saftech-logo {
         display: none;
