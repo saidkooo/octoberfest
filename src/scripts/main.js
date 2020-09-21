@@ -4,7 +4,7 @@ let opened = false;
 
 function openModal(param) {
     if (opened == false){
-        let video = document.querySelector("iframe").src=param
+        document.querySelector("iframe").src=param
         document.querySelector("body").style.cssText="overflow: hidden"
         modal.classList.add("open")
         opened = true

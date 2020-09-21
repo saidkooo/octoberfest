@@ -206,10 +206,9 @@ header {
 }
 .slick-arrow {
     position: absolute;
-    top: 95%;
+    top: 340px;
     z-index: 10;
-    margin: 65px auto 40px;
-    max-width: 190px;
+    margin: 0;
 }
 .slick-arrow:hover {
     opacity: 0.5;
@@ -310,6 +309,7 @@ footer {
     opacity: 0;
     visibility: hidden;
     overflow-y: scroll;
+    z-index: 100;
 }
 .modal.open {
     opacity: 1;
@@ -374,6 +374,9 @@ footer {
 }
 
 @media (max-width: 1300px) {
+    .slick-arrow {
+        top: 320px;
+    }
     .slick-arrow.slick-prev {
         left: 400px;
     }
@@ -383,6 +386,9 @@ footer {
 }
 
 @media (max-width: 1200px) {
+    .slick-arrow {
+        top: 300px;
+    }
     .promo {
         padding: 70px 0 80px;
     }
@@ -405,7 +411,7 @@ footer {
         padding: 40px 0 80px;
     }
     .slick-arrow {
-        top: 80%;
+        top: 280px;
     }
     .footer-content {
         padding: 30px 5%;
@@ -447,6 +453,9 @@ footer {
     .slick-slide img {
         min-width: 90%;
     }
+    .slick-arrow {
+        top: 340px;
+    }
     .slick-arrow.slick-prev {
         left: 300px;
     }
@@ -455,6 +464,9 @@ footer {
     }
 }
 @media (max-width: 950px) {
+    .slick-arrow {
+        top: 300px;
+    }
     .header-content {
         background-image: none;
     }
@@ -474,6 +486,9 @@ footer {
         width: 50%;
         margin: 10px auto 0;
         text-align: center;
+    }
+    .slick-arrow {
+        top: 290px;
     }
     .slick-arrow.slick-prev {
         left: 250px;
@@ -572,7 +587,7 @@ footer {
         font-size: 2.0rem;
     }
     .slick-arrow {
-        top: 80%;
+        top: 305px;
     }
     .footer__column {
         width: 50%;
@@ -582,11 +597,26 @@ footer {
 }
 
 @media (max-width: 690px) {
+    .slick-arrow {
+        top: 280px;
+    }
     .slick-arrow.slick-prev {
         left: 150px;
     }
     .slick-arrow.slick-next {
         right: 150px;
+    }
+}
+
+@media (max-width: 680px) {
+    .slick-arrow {
+        top: 270px;
+    }
+}
+
+@media (max-width: 620px) {
+    .slick-arrow {
+        top: 260px;
     }
 }
 
@@ -641,7 +671,7 @@ footer {
         display: none;
     }
     .slick-arrow {
-        top: 80px;
+        top: 110%;
     }
     .slick-slide {
         margin: 0 5px;
@@ -703,5 +733,11 @@ footer {
     }
     .saftech-logo {
         display: none;
+    }
+    .modal__body {
+        width: 100%;
+    }
+    .modal iframe {
+        width: 100%;
     }
 }
